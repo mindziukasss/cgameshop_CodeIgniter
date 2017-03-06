@@ -10,7 +10,7 @@
       <?php echo $product->title; ?>
     </div>
     <div class="game-add">
-      <fom method="post" action="<?php echo base_url(); ?>cart/add">
+      <form method="post" action="<?php echo base_url(); ?>cart/add/<?php echo $product->id; ?>">
         QTY: <input class="qty" type="text" name="qty" value="1" />
         <input type="hidden" name="item_number" value="<?php echo $product->id; ?>">
         <input type="hidden" name="price" value="<?php echo $product->price; ?>">
